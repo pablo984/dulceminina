@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+
+/*---------------HEADER--------------------------------*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 1em;
+}
+
+.logo{
+    width: 110px;
+}
+
+.container-menu{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
+    z-index: 3;
+}
+
+.contenido-menu{
+    position: absolute;
+    width: 100%;
+    max-width: 305px; /*Es lo que ocupa el menú que se lateraliza a la derecha*/
+    top:0;
+    left: 0;    
+    background-color: #592E0B; /*Color del menú lateral*/
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 500ms ease;
+    z-index: 5;
+}
+
+.titulo-menu-desplegable{
+    margin-top: 58px;
+    margin-left: 40px;
+    color:aliceblue
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;    
+    /*padding-left: 1em; Esto se lo quité para que las líneas divisorias ocupen todo el largo del menú desplegable */
+    transform: translateY(15%); /*Altura de los links con respecto al header*/
+}
+
+
+
+.nav > a{
+    display: block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 25px; /*Espacio entre el texto y su mini contenedor de texto */
+    border-top: 1px solid yellow;
+    color: aqua;
+}
+
+/*ANIMACIÓN: 
+estas 2 clases serán agregadas con Js*/
+.animacion{
+    opacity: 1;
+    visibility: visible;    
+}
+
+.animacion-2{
+    transform: translateX(0%);
+}
+
+/*-------MENU HAMBURGUESA--------------------------
+El "menu__barras", al tener una "position:absolute",
+se posiciona con respecto al "header" que tiene una
+"position:relative" y, además, es hijo de él.*/
+.menu__barras{   
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:40%;
+    right: 10%;
+    transform: scale(1);
+    cursor: pointer;       
+    z-index: 5;    
+}
+
+.menu__barras > span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red; /*Color de las barras */
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+}
+
+/*Clases que no estan en el HTML, pero que seran
+agregadas a las barras <span> mediante JavaScript: */
+.activarLinea1__menu-barras{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activarLinea2__menu-barras{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activarLinea3__menu-barras{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
