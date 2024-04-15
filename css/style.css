@@ -130,21 +130,41 @@ agregadas a las barras <span> mediante JavaScript: */
 /*SECCIÓN MAIN:*/
 h2{
     text-align: center;
+    margin-bottom: 1.5em;
 }
 
 .medios-pago{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;    
 }
 
 .efectivo{
     width: 25%;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
-.transferencia{
+.transferencia-mp{
     width: 25%;
-    padding: 0 40px;
+    padding: 0 0px;
+}
+
+.transferencia-banco-provincia{
+    width: 25%;
+    padding: 0 0px;
+}    
+
+
+.foto-dinero{
+    max-width: 100px;
+}
+
+.foto-mp{
+    max-width: 130px;
+}
+
+.foto-bp{
+    max-width: 90px;
 }
 
 
@@ -220,6 +240,7 @@ h2{
 .p-copyright{
     text-align: center;
     color:white;
+    font-size: 0.9em;
 }
 
 @media(max-width: 991px){ /*Cuando baje a 991px*/
