@@ -163,12 +163,25 @@ h3{
     margin-bottom: 0.1em;
 }
 
+/*CONTENEDOR GENERAL DE QUIENES SOMOS Y PRODUCTOS*/
 .grilla-productos, .grilla-q-somos{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 10px;
+}
+
+.rosa{
+    color:crimson;
+}
+
+.rojo{
+    color: red;
+}
+
+.azul{
+    color:rgb(0, 81, 255);
 }
 
 .dm{
@@ -198,10 +211,12 @@ h3{
     margin-bottom: 1em;
 }
 
+/*CONTENEDOR GENERAL DE LOS MEDIOS DE PAGO*/
 .medios-pago{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px; /*Acá SI se puede colocar padding y no lateraliza*/
 }
 
 .efectivo, .transferencia-mp, .transferencia-banco-provincia{
