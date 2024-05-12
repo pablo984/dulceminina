@@ -7,6 +7,8 @@
         <meta name="description" content="Venta de bombones finos">
         <!--LOGO MINIATURA EN PESTAÑA DE PÁGINA:-->
         <link rel="icon" href="./img/logo.png" type="image/png">
+        <!--TIPOGRAFÍA PARA LOS PÁRRAFOS:-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap">
         <title>Dulce Minina</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -26,60 +28,192 @@
                     <h2 class="titulo-menu-desplegable">MENÚ PRINCIPAL</h2>             
                     <nav class="nav">
                         <a href="index.html">Home</a>
-                        <a href="#">Nuestros productos</a>                        
-                        <a href="#">Sobre nosotros</a>   
-                        <a href="#">Contacto</a>                      
+                        <a href="#productos">Nuestros productos</a>     
+                        <a href="#chocolates">Tipos de chocolate</a>  
+                        <a href="#rellenos">Rellenos</a>                 
+                        <a href="#medios-de-pago">Medios de pago</a>  
+                        <a href="#ubicacion">Ubicación</a> 
+                        <a href="#redes-sociales">Contacto</a>                      
                     </nav>
                 </div>
             </div>
         </header>
         
+        <h1 class="titulo-principal">Elaboración artesanal de bombones</h1>
+        
         <main>
-            <h2>Medios de pago</h2>
-            <div class="medios-pago">
-                <div class="efectivo">
-                    <p>Podes abonar por transferencia bancaria a Mercado Pago o el Banco Provincia</p>
-                    <img src="./img/dinero.png" alt="dinero" class="foto-dinero">
-                </div>
+            <section id="sobre-nosotros">
+                <div class="grilla-q-somos">
+                    <!-- <div class="divisor-1"></div> -->
+                    <h2 class="titulo-q-somos">Sobre nosotros</h2>
+                    <article>
+                        <img src="./img/minina-casita-reducida.jpg" alt="minina" class="img-minina">
+                        <figcaption>En su casita personalizada</figcaption>
+                        <p class="descripcion-producto">
+                            <span class="dm">Dulce Minina</span> nació a partir de un profundo amor y una pérdida dolorosa. Tras la partida de nuestra amada gata, víctima de la leucemia felina, nos sumimos en el dolor de su ausencia. Sin embargo, decidimos transformar nuestra pena en algo hermoso: un tributo a su memoria y a los maravillosos diez años que compartimos juntos.
+                        </p>
 
-                <div class="transferencia-mp">
-                    <p>Podes abonar por transferencia bancaria a Mercado Pago o el Banco Provincia</p>
-                    <img src="./img/Mercado-Pago-Logo.png" alt="mp" class="foto-mp">
-                </div>
+                        <img src="./img/minina-pasto-reducida.jpg" alt="minina-pasto" class="img-minina">
+                        <figcaption>En el pasto, disfrutando el aire libre</figcaption>
+                        <p class="descripcion-producto">
+                            El proyecto <span class="dm">Dulce Minina</span> se gestó como una manera de honrar su vida y legado. Cada paso que damos, cada creación que ofrecemos, lleva consigo el recuerdo imborrable de nuestra fiel compañera. Su amor, su gracia y su dulzura nos inspiran a seguir adelante, llevando consigo su espíritu en cada dulce que elaboramos.
+                        </p>
 
-                <div class="transferencia-banco-provincia">
-                    <p>Podes abonar por transferencia bancaria a Mercado Pago o el Banco Provincia</p>
-                    <img src="./img/web-bco-provincia-clientes.png" alt="banco-provincia" class="foto-bp">
+                        <img src="./img/minina-sillon-reducida.jpg" alt="minina-sillon" class="img-minina">
+                        <figcaption>En el respaldo del sillón que tanto amaba</figcaption>
+                        <p class="descripcion-producto">
+                            Así, <span class="dm">Dulce Minina</span> no es solo un negocio, es un homenaje a un ser querido que iluminó nuestras vidas. Nos enorgullece compartir esta historia con ustedes y esperamos que cada bocado de nuestros productos te brinde un destello de la misma alegría y amor que ella nos brindó a nosotros.
+                        </p>
+                        <div class="divisor"></div>
+                    </article>
                 </div>
-            </div>
+            </section>
+
+            <section id="productos">
+                <h2>Nuestros productos</h2>
+                <div class="grilla-productos">
+                    <h3>Exquisita Tentación: bombones finos de chocolate rellenos</h3>
+                    <article>
+                        <img src="./img/bombones-1-reducido.jpg" alt="bombones" class="img-grilla">
+                        <p class="descripcion-producto">
+                            Sumergite en un mundo de placer con nuestros exquisitos bombones finos de chocolate rellenos. Cada bocado es una experiencia sensorial única, donde la suavidad del chocolate se fusiona con el deleite de los rellenos más exquisitos.     
+                        </p>
+                    </article>
+                    <article class="articulo">
+                        <img src="./img/bombon-relleno-reducido.jpg" alt="bombon-partido" class="img-grilla">                        
+                        <p class="descripcion-producto">
+                            Nuestra cuidadosa selección de ingredientes de la más alta calidad garantiza un sabor incomparable en cada uno de nuestros bombones. Desde el clásico relleno de dulce de leche, hasta la sorprendente explosión de frutas secos, cada opción es una obra maestra de la dulzura y la sofisticación.
+                        </p>
+                    </article>
+                    <article>
+                        <img src="./img/corazon-reducido.jpg" alt="corazon" class="img-grilla">
+                        <p class="descripcion-producto">
+                            No te podes perder nuestros riquísimos corazones de diamante rellenos con dulce de leche. También se pueden rellenar con los ingredientes que más te gusten. 
+                        </p>
+                    </article>
+                    <article>
+                        <img src="./img/ayerdi-reducida.jpg" alt="ayerdi" class="img-grilla">
+                        <p class="descripcion-producto">
+                            Envueltos con elegancia, estos pequeños tesoros son el regalo perfecto para cualquier ocasión especial o simplemente para consentirte a ti mismo. Déjate seducir por la tentación y descubrí la magia de nuestros bombones finos de chocolate rellenos. ¡Hacé que cada momento sea verdaderamente memorable con un toque de indulgencia! 
+                        </p>
+                    </article>
+                    <h3 class="titulo-caja">
+                        Personalizá tu regalo con elegancia
+                    </h3>
+                    <article>
+                        <img src="./img/caja-reducida.jpg" alt="caja" class="img-grilla">
+                        <p class="descripcion-producto">
+                            Elegí el color del moño que más se adapte a la ocasión: rosa para un gesto dulce y delicado, rojo para expresar tu pasión y amor, o azul para un detalle lleno de serenidad y calma.
+                        </p>                        
+                    </article>
+
+                    <h2 class="chocolates" id="chocolates">
+                        Descubrí nuestra variedad de chocolates
+                    </h2>
+                    <article>
+                        <h3>Chocolate semiamargo</h3>
+                        <img src="./img/chocolate-amargo.jpg" alt="chocolate-amargo" class="img-grilla">
+                        <p class="descripcion-producto">
+                            Para los amantes del chocolate con un toque de intensidad, nuestro <strong>chocolate semiamargo</strong> es la elección perfecta. Con su equilibrio entre dulzura y amargor, cautivará tu paladar.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 >Chocolate blanco</h3>
+                        <img src="./img/chocolate-blanco.jpg" alt="chocolate-blanco" class="img-grilla">
+                        <p class="descripcion-producto">
+                            Sumergite con una experiencia extraordinaria con nuestro <strong>chocolate blanco</strong> de primera calidad. Su cremosidad y delicado sabor te ofrecerán un deleite irresistible en cada bocado.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Chocolate con leche</h3>
+                        <img src="./img/chocolate-con-leche.jpg" alt="chocolate-con-leche" class="img-grilla">
+                        <p class="descripcion-producto">
+                            Dejate seducir por la suavidad y la dulzura inigualable de nuestro <strong>chocolate con leche</strong>. Su exquisito sabor te envolverá en una experiencia indulgente y reconfortante, ideal para satisfacer tus antojos más dulces.
+                        </p>
+                    </article>
+
+                    <h2 class="rellenos" id="rellenos">Elegí tus rellenos para los bombones</h2>
+                    <article>
+                        <h3>Frutos secos</h3>
+                        <img src="./img/frutos-secos.jpg" alt="frutos-secos" class="img-grilla">
+                        <p class="descripcion-producto">
+                            La perfecta combinación de lo crujiente de los frutos secos como las nueces, maní, almendras y castaña de cajú con la suavidad del chocolate. 
+                        </p>
+                    </article>
+                    
+                    <article>
+                        <h3>Dulce de leche</h3>
+                        <img src="./img/dulce-de-leche.jpg" alt="dulce-de-leche" class="img-grilla">
+                        <p class="descripcion-producto">
+                            Un placer irresistible que no puede faltar en ninguna delicia. 
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Menta</h3>
+                        <img src="./img/menta-reducida.jpg" alt="menta" class="img-grilla">
+                        <p class="descripcion-producto">
+                            El contraste perfecto entre el intenso sabor a menta y la suavidad del chocolate.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Nutella</h3>
+                        <img src="./img/nutella-reducida.jpg" alt="nutella" class="img-grilla">
+                        <p class="descripcion-producto">
+                            El placer exquisito de nuestro relleno de Nutella, que hará que cada momento sea una verdadera delicia para tu paladar.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Otros rellenos adicionales</h3>
+                        <p class="descripcion-producto">
+                            A elección del cliente, para satisfacer todos tus antojos disfrutando el mejor chocolate.
+                        </p>
+                        <h2 class="proximamente">Proximamente ampliaremos nuestro catálogo con deliciosas novedades</h2>
+                        <div class="divisor"></div>
+                    </article>                    
+                </div>
+            </section>
+
+            <section id="medios-de-pago">
+                <h2>Medios de pago</h2>
+                <div class="medios-pago">
+                    <div class="efectivo">
+                        <p>Si preferís la simplicidad, podés realizar el pago al momento de recibir tu pedido.</p>
+                        <img src="./img/dinero.png" alt="dinero" class="foto-dinero">
+                    </div>
+    
+                    <div class="transferencia-mp">
+                        <p>Facilitamos tu pago mediante transferencia utilizando la plataforma segura de Mercado Pago</p>
+                        <img src="./img/Mercado-Pago-Logo.png" alt="mp" class="foto-mp">
+                    </div>
+    
+                    <div class="transferencia-banco-provincia">
+                        <p>Transferencia : También podés realizar una transferencia  directa con alias o CBU a otras entidades bancarias.</p>
+                        <img src="./img/otros-bancos.png" alt="banco-provincia" class="foto-otros">
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer class="footer">
+            <section id="ubicacion">
+                <div class="ubicacion">
+                    <h3 class="titulo-ubicacion">Ubicación</h3>
+                    <img src="./img/minimapa.jpg" alt="minimapa" class="img-grilla">
+                    <p class="descripcion-producto">
+                        Estamos ubicados en Villa tesei (Hurlingham), zona Oeste del Gran Buenos Aires. 
+                    </p>
+                </div>
+
+            </section>
+
             <section class="footer-container">
-                <div class="footer-row">                
+                <div class="footer-row">
                     <div class="footer-links">
-                        <h4>Productos</h4>
-                        <ul>
-                            <li><a href="#">Nuestros productos</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-links">
-                        <h4>Cómo comprar</h4>
-                        <ul>
-                            <li><a href="#">Medios de pago</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-links">
-                        <h4>Productos</h4>
-                        <ul>
-                            <li><a href="#">Nuestros productos</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer-links">
-                        <h4>Nuestras redes sociales</h4>
+                        <h4 id="redes-sociales">Nuestras redes sociales</h4>
                         <div class="social-links">
                             <a href="http://wa.me/5491158186858"><img src="./img/whatsapp-32px.png" alt="whatsapp"></a>
                             <a href="https://www.instagram.com/dulceminina07?utm_source=qr&igsh=bWdkYjA2amkweTl0"><img src="./img/instagram-32px.png" alt="instagram"></a>
